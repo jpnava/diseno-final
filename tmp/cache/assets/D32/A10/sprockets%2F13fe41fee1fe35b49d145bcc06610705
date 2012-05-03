@@ -1,7 +1,7 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1335977382.603978:@value{I"
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1336009168.244896:@value{I"
 class:EFI"BundledAsset;
 FI"id;
-F"%557991298268b80fe52e436dbf5db756I"logical_path;
+F"%d9a5a8554388a0b22c82659845f5a8deI"logical_path;
 FI"application.css;
 TI"pathname;
 FI"1$root/app/assets/stylesheets/application.css;
@@ -9,9 +9,9 @@ FI"content_type;
 FI"text/css;
 FI"
 mtime;
-FI"2012-05-02T10:55:04-05:00;
+FI"2012-05-02T20:39:25-05:00;
 FI"	body;
-FI"c/*
+FI"/*
  * This is a manifest file that'll automatically include all the stylesheets available in this directory
  * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
  * the top of the compiled file, but it's generally better to create a new file per style scope.
@@ -31,7 +31,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', end
 .fondo2{ background:#CCCCCC;}
 .fomdo3{background:#E5E5E5; background-image: url("assets/images/pattern.png") background-repeat:repeat-x;}
 .Contenedor{width:960px; margin:0 auto; padding:0px;}
-.Cabeza { border:1px solid red;}
+.Cabeza{ text-align:center; margin:20px 0;}
+.Cabeza a{ font-size:18px; color:white; text-decoration:none;}
+.Cabeza img{ padding:0 0 0 30px; border:1px solid red;}
+.Cabeza a:hover{color:#CCCCCC; text-decoration:none;}
+
+.popo:active{background:red; padding:10px; border:1px solid red;}
+
 .bordeGris{border-top:1px solid #444444;}
 .bordeGris2{border-top:1px solid #aaaaaa;}
 .bordeGris3{border-top:1px solid #D8D8D8; margin:10px 0 0 0;}
@@ -45,7 +51,7 @@ h1 { font-family: Arial, Helvetica, sans-serif; font-weight: 400; }
 .textoImgFooter{margin:10px; color: white; font-size:14px;}
 #FraseJocosa{ color:white; margin:40px 0; font-size:30px; text-shadow: 0px 2px 1px #212121;filter: dropshadow(color=#212121, offx=0, offy=2);}
 .imagenFooter img{margin:-20px 0 0 0; float:right; width:30px; height:30px;}
-.cajaSocial{height:150px; margin:20px 0; background:#DDDDDD; -webkit-border-radius: 10px;
+.cajaSocial{height:50px; margin:20px 0; background:#DDDDDD; -webkit-border-radius: 10px;
 -webkit-border-bottom-right-radius: 1px;
 -webkit-border-bottom-left-radius: 1px;
 -moz-border-radius: 10px;
@@ -55,8 +61,17 @@ border-radius: 10px;
 border-bottom-right-radius: 1px;
 border-bottom-left-radius: 1px;}
 
-#columnaFace{margin:0 0 0 0;float:left; display: block; width:200px; height:140px;background: url('/assets/button-subscribe.png') top;text-indent: -99999px;}
-	#columnaFace:hover {background-position: 0 30px;}
+#columnaFace{float:left; display: block; width:100px; height:50px;background: url('/assets/facebook.png') top;text-indent: -99999px;}
+#columnaFace:hover {background-position: 0 50px;}
+
+#columnaTumblr{float:left; display: block; width:100px; height:50px;background: url('/assets/tumblr.png') top;text-indent: -99999px;}
+#columnaTumblr:hover {background-position: 0 50px;}
+
+#columnaTwitter{float:left; display: block; width:100px; height:50px;background: url('/assets/twitter.png') top;text-indent: -99999px;}
+#columnaTwitter:hover {background-position: 0 50px;}
+
+#columnalinkedIn{float:left; display: block; width:100px; height:50px;background: url('/assets/linkedIn.png') top;text-indent: -99999px;}
+#columnalinkedIn:hover {background-position: 0 50px;}
 
 .cajaSocial img{ text-align:center;}
 .cajaSocialTexto{
@@ -141,7 +156,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', end
 #DerechosAutor{ font-family: Arial, Helvetica, sans-serif; font-size:16px; color:#D6D6D6; margin:10px; padding:20px 0;}
 ;
 FI"asset_paths;
-F[I"1$root/app/assets/stylesheets/application.css;
+F[I"1$root/app/assets/stylesheets/application.css;
 FI":$root/app/assets/stylesheets/bootstrap-responsive.css;
 FI">$root/app/assets/stylesheets/bootstrap-responsive.min.css;
 FI"/$root/app/assets/stylesheets/bootstrap.css;
@@ -150,6 +165,7 @@ FI"0$root/app/assets/stylesheets/categorias.css;
 FI"5$root/app/assets/stylesheets/categorias.css.scss;
 FI"1$root/app/assets/stylesheets/comentarios.css;
 FI"6$root/app/assets/stylesheets/comentarios.css.scss;
+FI"4$root/app/assets/stylesheets/concursos.css.scss;
 FI"1$root/app/assets/stylesheets/inicio.css.scss;
 FI"+$root/app/assets/stylesheets/posts.css;
 FI"0$root/app/assets/stylesheets/posts.css.scss;
@@ -161,19 +177,19 @@ FI"8$root/app/assets/stylesheets/user_sessions.css.scss;
 FI"+$root/app/assets/stylesheets/users.css;
 FI"0$root/app/assets/stylesheets/users.css.scss;
 FI"dependency_paths;
-F[{I"	path;
+F[{I"	path;
 FI"1$root/app/assets/stylesheets/application.css;
 FI"
 mtime;
-FIu:	TimeOÄ  @‹:@_zoneI"CDT;
+FIu:	TimeaÄ  êù:@_zoneI"CDT;
 T:offseti˛∞πI"hexdigest;
-F"%39a40a8e3981735582a3c00d73a9c7a9{I"	path;
+F"%3531e2cf8f4d43aea68bbfca7143856f{I"	path;
 FI"!$root/app/assets/stylesheets;
 FI"
 mtime;
-FIu;#Ä  põ;I"CDT;
+FIu;aÄ  ‡$;I"CDT;
 T;i˛∞πI"hexdigest;
-F"%9b119513d27a392d25e446bbbf55b94d{I"	path;
+F"%0a29ad0c24fcd68aad1f8b25e566db3e{I"	path;
 FI":$root/app/assets/stylesheets/bootstrap-responsive.css;
 FI"
 mtime;
@@ -222,6 +238,12 @@ mtime;
 FIu;MÄ  U;I"CDT;
 T;i˛∞πI"hexdigest;
 F"%8d5aff52af206de53b710d382b763f77{I"	path;
+FI"4$root/app/assets/stylesheets/concursos.css.scss;
+FI"
+mtime;
+FIu;UÄ  ‡r;I"CDT;
+T;i˛∞πI"hexdigest;
+F"%4e100b4f974954157a6e38f017ed4836{I"	path;
 FI"1$root/app/assets/stylesheets/inicio.css.scss;
 FI"
 mtime;

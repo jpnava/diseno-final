@@ -1,0 +1,30 @@
+<h1>Listing concursos</h1>
+
+<table>
+  <tr>
+  	<th></th>
+    <th>Titulo</th>
+    <th>Entrega</th>
+    <th>Descripcion</th>
+    
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @concursos.each do |concurso| %>
+  <tr>
+    <td><%= image_tag concurso.fotoconcurso.url :thumb %></td>
+    <td><%= concurso.titulo %></td>
+    <td><%= concurso.entrega %></td>
+    <td><%= concurso.descripcion %></td>   
+    <td><%= link_to 'Show', concurso %></td>
+    <td><%= link_to 'Edit', edit_concurso_path(concurso) %></td>
+    <td><%= link_to 'Destroy', concurso, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Concurso', new_concurso_path %>
